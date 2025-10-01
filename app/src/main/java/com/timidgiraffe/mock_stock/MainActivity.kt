@@ -45,3 +45,5 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+//Composable → asks ViewModel → gets data from Repository → Repository calls API via Retrofit → Result flows back → ViewModel updates state → Composable renders it.

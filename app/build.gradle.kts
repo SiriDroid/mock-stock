@@ -53,6 +53,9 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.hilt.android.compiler)
     implementation(libs.retrofit.android)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp.android)
+    implementation(libs.okhttp.logging.interceptor)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
