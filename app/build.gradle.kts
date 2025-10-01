@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.hilt.android)
     implementation(libs.hilt.android.compiler)
+    implementation(libs.retrofit.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
