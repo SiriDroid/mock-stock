@@ -18,6 +18,4 @@ fun ForexPairsScreen(forexViewModel: ForexViewModel = hiltViewModel()) {
         }
 
     }
-
-
 }
