@@ -1,11 +1,12 @@
 package com.timidgiraffe.mock_stock.repository
 
 import android.util.Log
+import com.timidgiraffe.mock_stock.api.ApiService
+import jakarta.inject.Inject
 
-class ForexPairsRepositoryImpl: ForexPairsRepository {
+class ForexPairsRepositoryImpl @Inject constructor(private val apiService: ApiService) : ForexPairsRepository {
     override suspend fun getForexPairs(): List<ForexPair> {
-        Log.d("FOREX PAIRS", "getForexPairs: ")
-        return emptyList()
+        return apiService.getForexPairs()
     }
 }
 

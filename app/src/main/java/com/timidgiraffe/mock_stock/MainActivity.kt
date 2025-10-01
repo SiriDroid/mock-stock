@@ -46,4 +46,4 @@ fun GreetingPreview() {
     }
 }
 
-//Composable → asks ViewModel → gets data from Repository → Repository calls API via Retrofit → Result flows back → ViewModel updates state → Composable renders it.
+//Composable → asks ViewModel → gets data from usecase → use case gets data from repository -> Repository calls API via Retrofit → Result flows back → ViewModel updates state → Composable renders it.
