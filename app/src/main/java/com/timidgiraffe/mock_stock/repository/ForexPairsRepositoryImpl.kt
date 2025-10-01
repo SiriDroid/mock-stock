@@ -6,7 +6,13 @@ import jakarta.inject.Inject
 
 class ForexPairsRepositoryImpl @Inject constructor(private val apiService: ApiService) : ForexPairsRepository {
     override suspend fun getForexPairs(): List<ForexPair> {
-        return apiService.getForexPairs()
+        val demoForexPairs = listOf(
+            ForexPair("EURUSD", "Major", "EUR", "USD"),
+            ForexPair("GBPJPY", "Cross", "GBP", "JPY")
+        )
+
+        return demoForexPairs
+//        return apiService.getForexPairs()
     }
 }
 
@@ -20,3 +26,5 @@ data class ForexPair(
     val currencyBase: String,
     val currencyQuote: String
 )
+
+

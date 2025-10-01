@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.hilt.android)
     implementation(libs.hilt.android.compiler)
+    implementation(libs.hilt.navigation.compose)
     implementation(libs.retrofit.android)
     implementation(libs.retrofit.converter.gson)
     implementation(libs.okhttp.android)
